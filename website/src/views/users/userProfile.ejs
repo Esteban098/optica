@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include ("../partials/head") %>
+
+
+    <body id="body-prodile">
+
+        <header class="j-space-between bgc-header font-color header">
+            <%- include ("../partials/header-home") %>
+        </header>
+
+        <body>
+            <section class="container-user">
+
+                <h1> Bienvenido <%=userLogged.name %>
+                </h1>
+                <% if(locals.errors) {%>
+                    <p class="text-danger">Tiene errores en el formulario</p>
+                    <%} %>
+
+                        <div class="containerImgProfile">
+                            <img src="<%=`/img/users/${locals.userLogged.avatar}`%>" alt="">
+                            <!--  <form action="<%=`/api/user/profile/${userLogged.id}`%>" method="get"> -->
+                            <button type="submit" class="btn btn-primary" id="btnEditProfile">Edita tus datos</button>
+                            <!--   </form> -->
+                        </div>
+            </section>
+            <section class="section2">
+                </div>
+                <div id="containerForm">
+                    <form action="/user/profile/<%=userLogged.id%>/edit?_method=PUT" method="post"
+                        enctype="multipart/form-data" id="formProfile">
+                        <label for="">Tus Datos:</label>
+                        <input
+                            class="formularies-deco form-control  <%=locals.errors && errors.name ? 'is-invalid' : "" %> "
+                            type="text" name="name" id="profileName"
+                            value="<%=locals.oldData && oldData.name ?oldData.name : userLogged.name%>"
+                            placeholder="Ingresa tu Nombre de Usuario">
+                        <p class="text-danger" id="errorName">
+                            <%=locals.errors && errors.name ? errors.name.msg: "" %>
+                        </p>
+                        <label for=""></label>
+                        <input name="lastName"
+                            class="formularies-deco form-control <%=locals.errors && errors.lastName ? 'is-invalid' : ""  %>"
+                            type="text" id="userLastName" placeholder="Ingresa tu apellido"
+                            value="<%=locals.oldData && oldData.lastName ?oldData.lastName : userLogged.lastName%>">
+                        <p class="text-danger" id="errorLastName">
+                            <%=locals.errors && errors.lastName ? errors.lastName.msg: "" %>
+                        </p>
+                        <label for="">Cambiar Contraseña</label>
+                        <input
+                            class="formularies-deco  form-control <%=locals.errors && errors.oldPassword ? 'is-invalid' : ""  %>"
+                            type="password" name="oldPassword" id="oldPassword" value=""
+                            placeholder="Ingresa tu Contraseña actual">
+                        <p class="text-danger" id="passwordError">
+                            <%=locals.errors && errors.oldPassword ? errors.oldPassword.msg: "" %>
+                        </p>
+                        <label for=""></label>
+                        <input
+                            class="formularies-deco form-control <%=locals.errors && errors.password ? 'is-invalid' : ""  %>"
+                            type="password" name="password" id="newPassword" value=""
+                            placeholder="Ingresa tu Nueva Contraseña">
+                        <p class="text-danger" id="newPasswordError">
+                            <%=locals.errors && errors.password ? errors.password.msg: "" %>
+                        </p>
+                        <label for=""></label>
+                        <input
+                            class="formularies-deco form-control <%=locals.errors && errors.confirmPassword ? 'is-invalid' : ""  %>"
+                            type="password" name="confirmPassword" id="confirmNewPassword" value=""
+                            placeholder="Confirma tu nueva Contraseña">
+                        <p class="text-danger" id="confirmPasswordError">
+                            <%=locals.errors && errors.confirmPassword ? errors.confirmPassword.msg: "" %>
+                        </p>
+                        <label for="">Datos adicionales:</label>
+                        <input
+                            class="formularies-deco form-control <%=locals.errors && errors.streetAddress ? 'is-invalid' : ""  %>"
+                            type="text" name="streetAddress" id="adress" placeholder="Ingresa tu Direccion"
+                            value="<%=locals.oldData && oldData.streetAddress ?oldData.streetAddress : userLogged.streetAddress%>">
+                        <p class=" text-danger" id="adressError">
+                            <%=locals.errors && errors.streetAddress ? errors.streetAddress.msg: "" %>
+                        </p>
+                        <label for=""> Selecionar foto de perfil</label>
+                        <input class=" form-control <%=locals.errors && errors.avatar ? 'is-invalid' : ""  %>"
+                            type="file" name="avatar" id="avatar">
+                        <p class="text-danger">
+                            <%=locals.errors && errors.avatar ? errors.avatar.msg: "" %>
+                        </p>
+                        <button type="submit" class="btn btn-primary" id="btnEnviarProfile">Enviar</button>
+                    </form>
+                </div>
+                <div class="container-btns">
+                    <form action="/user/delete/<%=userLogged.id%>?_method=DELETE" id="deleteAccount" method="post">
+                        <button type="submit" id="btnDeleteAccount" class="btn btn-danger">Eliminar Cuenta</button>
+                    </form>
+                </div>
+            </section>
+            <footer class="footer-profile">
+                <%- include ("../partials/footer")%>
+            </footer>
+            <%- include('../partials/scripts-boostrap.ejs')%>
+
+                <script src="/js/front-validation/user-profile.js"></script>
+
+                <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"> </script>
+
+        </body>
+
+</html>

@@ -1,0 +1,880 @@
+[
+    {
+        "userId": 1,
+        "name": "Brandy",
+        "lasrName": "Papis",
+        "country": "Czech Republic",
+        "datetime": "4/23/2021",
+        "email": "bpapis0@intel.com",
+        "password": "rxooPzRD7c1",
+        "confirmPassword": "5CU5J5rE",
+        "streetAddress": "4 Dahle Park",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Asphalt Paving",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 2,
+        "name": "Halsey",
+        "lasrName": "Stodit",
+        "country": "Poland",
+        "datetime": "4/6/2021",
+        "email": "hstodit1@wufoo.com",
+        "password": "CkM6K5",
+        "confirmPassword": "oJoM6mBXbE2",
+        "streetAddress": "7721 Stuart Street",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Structural & Misc Steel Erection",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 3,
+        "name": "Danila",
+        "lasrName": "Pinnegar",
+        "country": "Russia",
+        "datetime": "1/2/2021",
+        "email": "dpinnegar2@ca.gov",
+        "password": "mZfKdS",
+        "confirmPassword": "4TTCqXUsJXH",
+        "streetAddress": "87 Barby Alley",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Granite Surfaces",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 4,
+        "name": "Joye",
+        "lasrName": "Nazer",
+        "country": "Canada",
+        "datetime": "3/7/2021",
+        "email": "jnazer3@stanford.edu",
+        "password": "44WHU36",
+        "confirmPassword": "N6uM4foG",
+        "streetAddress": "792 Messerschmidt Drive",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "EIFS",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 5,
+        "name": "Massimo",
+        "lasrName": "Gillmore",
+        "country": "China",
+        "datetime": "7/26/2021",
+        "email": "mgillmore4@paypal.com",
+        "password": "qhQhXVo2Pd",
+        "confirmPassword": "fW9HGpBq4o",
+        "streetAddress": "85216 Lakewood Gardens Avenue",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Electrical",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 6,
+        "name": "Putnem",
+        "lasrName": "Gabriely",
+        "country": "Ukraine",
+        "datetime": "3/26/2021",
+        "email": "pgabriely5@dion.ne.jp",
+        "password": "3wbeny",
+        "confirmPassword": "VvNoCGV",
+        "streetAddress": "02534 Summer Ridge Junction",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Prefabricated Aluminum Metal Canopies",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 7,
+        "name": "Valina",
+        "lasrName": "Gosse",
+        "country": "China",
+        "datetime": "11/6/2021",
+        "email": "vgosse6@google.ca",
+        "password": "6KIVdo1KL79",
+        "confirmPassword": "zr5hdd",
+        "streetAddress": "59 Caliangt Street",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Plumbing & Medical Gas",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 8,
+        "name": "Elmira",
+        "lasrName": "Ludl",
+        "country": "China",
+        "datetime": "5/20/2021",
+        "email": "eludl7@mapy.cz",
+        "password": "Qfso2raSBK4",
+        "confirmPassword": "r92hhKl",
+        "streetAddress": "9 Melrose Alley",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Masonry",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 9,
+        "name": "Wesley",
+        "lasrName": "Ivoshin",
+        "country": "Finland",
+        "datetime": "6/28/2021",
+        "email": "wivoshin8@miibeian.gov.cn",
+        "password": "vaCgsoy1ie",
+        "confirmPassword": "J8dp5fE",
+        "streetAddress": "4 Nevada Point",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Termite Control",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 10,
+        "name": "Ky",
+        "lasrName": "Angeau",
+        "country": "Portugal",
+        "datetime": "4/29/2021",
+        "email": "kangeau9@usgs.gov",
+        "password": "KALhVG0t",
+        "confirmPassword": "NEBcKUrXCei",
+        "streetAddress": "4 Charing Cross Place",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Plumbing & Medical Gas",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 11,
+        "name": "Lyman",
+        "lasrName": "Chiswell",
+        "country": "Lithuania",
+        "datetime": "11/28/2021",
+        "email": "lchiswella@hhs.gov",
+        "password": "JvJDxs",
+        "confirmPassword": "znjimy2q",
+        "streetAddress": "6 Debra Pass",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Fire Protection",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 12,
+        "name": "Ronica",
+        "lasrName": "Rowe",
+        "country": "China",
+        "datetime": "7/8/2021",
+        "email": "rroweb@addtoany.com",
+        "password": "OvPeXLyv",
+        "confirmPassword": "NQ3xquriUfoT",
+        "streetAddress": "7756 Vera Drive",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "EIFS",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 13,
+        "name": "Mike",
+        "lasrName": "Farragher",
+        "country": "Azerbaijan",
+        "datetime": "1/23/2021",
+        "email": "mfarragherc@squidoo.com",
+        "password": "L8TCtquee34",
+        "confirmPassword": "12JGu1",
+        "streetAddress": "02051 Morning Way",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Granite Surfaces",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 14,
+        "name": "Worden",
+        "lasrName": "McDermott-Row",
+        "country": "United States",
+        "datetime": "9/9/2021",
+        "email": "wmcdermottrowd@independent.co.uk",
+        "password": "HtuZhH",
+        "confirmPassword": "DPKqsUwLqo",
+        "streetAddress": "26 Brentwood Parkway",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Overhead Doors",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 15,
+        "name": "Farica",
+        "lasrName": "Jozefiak",
+        "country": "Tanzania",
+        "datetime": "3/13/2021",
+        "email": "fjozefiake@diigo.com",
+        "password": "0X8jk87R",
+        "confirmPassword": "H47hORxrPZdT",
+        "streetAddress": "58 Morrow Way",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Doors, Frames & Hardware",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 16,
+        "name": "Sully",
+        "lasrName": "Livezley",
+        "country": "China",
+        "datetime": "5/2/2021",
+        "email": "slivezleyf@vimeo.com",
+        "password": "cWiua7e",
+        "confirmPassword": "o4tBghO",
+        "streetAddress": "09 Grover Crossing",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Curb & Gutter",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 17,
+        "name": "Phillip",
+        "lasrName": "Stothart",
+        "country": "Brazil",
+        "datetime": "5/31/2021",
+        "email": "pstothartg@google.ca",
+        "password": "PyasfB",
+        "confirmPassword": "GSmKATRJYR6",
+        "streetAddress": "11 Lunder Avenue",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Masonry",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 18,
+        "name": "Genia",
+        "lasrName": "Revelle",
+        "country": "Indonesia",
+        "datetime": "1/12/2021",
+        "email": "grevelleh@altervista.org",
+        "password": "NT5twE2",
+        "confirmPassword": "iEcqcTV",
+        "streetAddress": "775 Ridge Oak Circle",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Masonry & Precast",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 19,
+        "name": "Eydie",
+        "lasrName": "Welds",
+        "country": "Macedonia",
+        "datetime": "12/27/2020",
+        "email": "eweldsi@topsy.com",
+        "password": "R36RzEfGwCl",
+        "confirmPassword": "q1jgrTNS",
+        "streetAddress": "5074 Mitchell Center",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Drywall & Acoustical (FED)",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 20,
+        "name": "Farley",
+        "lasrName": "McGhie",
+        "country": "Czech Republic",
+        "datetime": "1/22/2021",
+        "email": "fmcghiej@tmall.com",
+        "password": "MQb0Ccw80XQ1",
+        "confirmPassword": "GG07fbDoN",
+        "streetAddress": "58429 Grayhawk Drive",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Termite Control",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 21,
+        "name": "Sindee",
+        "lasrName": "Wigzell",
+        "country": "Greece",
+        "datetime": "11/13/2021",
+        "email": "swigzellk@a8.net",
+        "password": "j4GwyVjyV5ZD",
+        "confirmPassword": "a50TTKf",
+        "streetAddress": "42 Clemons Parkway",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Asphalt Paving",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 22,
+        "name": "Marieann",
+        "lasrName": "Philippet",
+        "country": "China",
+        "datetime": "8/9/2021",
+        "email": "mphilippetl@nhs.uk",
+        "password": "BgkP4r",
+        "confirmPassword": "LQC9hAmob",
+        "streetAddress": "13 Morrow Terrace",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Termite Control",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 23,
+        "name": "Alma",
+        "lasrName": "Broxton",
+        "country": "Philippines",
+        "datetime": "11/28/2021",
+        "email": "abroxtonm@examiner.com",
+        "password": "s8Qfqbl",
+        "confirmPassword": "MUiUlfPga4",
+        "streetAddress": "719 Northport Alley",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "EIFS",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 24,
+        "name": "Joyce",
+        "lasrName": "Tunder",
+        "country": "China",
+        "datetime": "4/19/2021",
+        "email": "jtundern@photobucket.com",
+        "password": "hPSjwJqdm",
+        "confirmPassword": "jHYFsNcUJO7",
+        "streetAddress": "61837 Florence Drive",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Masonry & Precast",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 25,
+        "name": "Maridel",
+        "lasrName": "Houlridge",
+        "country": "Indonesia",
+        "datetime": "9/27/2021",
+        "email": "mhoulridgeo@examiner.com",
+        "password": "P03bXSwc",
+        "confirmPassword": "26r77FWN5",
+        "streetAddress": "8 John Wall Pass",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Hard Tile & Stone",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 26,
+        "name": "Gwendolin",
+        "lasrName": "Brunger",
+        "country": "Ivory Coast",
+        "datetime": "2/2/2021",
+        "email": "gbrungerp@businessweek.com",
+        "password": "5Fa5HHBeI",
+        "confirmPassword": "KRdOPB",
+        "streetAddress": "7781 Linden Drive",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Site Furnishings",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 27,
+        "name": "Marlena",
+        "lasrName": "Kermannes",
+        "country": "China",
+        "datetime": "7/4/2021",
+        "email": "mkermannesq@disqus.com",
+        "password": "9CI93t4L",
+        "confirmPassword": "Ntkx0Ld0VEZx",
+        "streetAddress": "86 Bowman Street",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Casework",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 28,
+        "name": "Ariel",
+        "lasrName": "Cansdell",
+        "country": "Hungary",
+        "datetime": "7/7/2021",
+        "email": "acansdellr@economist.com",
+        "password": "S5aHiErN1",
+        "confirmPassword": "yrZSJ7ATrT",
+        "streetAddress": "0180 Sutherland Way",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Drywall & Acoustical (MOB)",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 29,
+        "name": "Hatti",
+        "lasrName": "Kettlesing",
+        "country": "Philippines",
+        "datetime": "12/6/2021",
+        "email": "hkettlesings@ucla.edu",
+        "password": "zWl4bCFQrvU",
+        "confirmPassword": "jdEqHjQRFIx",
+        "streetAddress": "2 Debra Park",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Masonry",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 30,
+        "name": "Audi",
+        "lasrName": "Scripture",
+        "country": "China",
+        "datetime": "9/30/2021",
+        "email": "ascripturet@nature.com",
+        "password": "RlVXBKoC6xF",
+        "confirmPassword": "MrnVIL",
+        "streetAddress": "3 Oneill Way",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Roofing (Metal)",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 31,
+        "name": "Nancie",
+        "lasrName": "Aldhous",
+        "country": "China",
+        "datetime": "5/17/2021",
+        "email": "naldhousu@ox.ac.uk",
+        "password": "Y2dhUwHe6E",
+        "confirmPassword": "3wWMNw",
+        "streetAddress": "374 Debs Parkway",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Fire Protection",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 32,
+        "name": "Ferdinanda",
+        "lasrName": "Van der Son",
+        "country": "Portugal",
+        "datetime": "9/4/2021",
+        "email": "fvandersonv@adobe.com",
+        "password": "RrSSyyD",
+        "confirmPassword": "V5ckOs",
+        "streetAddress": "768 Meadow Valley Alley",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Framing (Wood)",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 33,
+        "name": "Natalya",
+        "lasrName": "Batey",
+        "country": "China",
+        "datetime": "4/30/2021",
+        "email": "nbateyw@g.co",
+        "password": "OIgtdau3TKPR",
+        "confirmPassword": "3WT5xzc",
+        "streetAddress": "4 Forster Trail",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "HVAC",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 34,
+        "name": "Vitoria",
+        "lasrName": "Sherburn",
+        "country": "Philippines",
+        "datetime": "4/11/2021",
+        "email": "vsherburnx@ning.com",
+        "password": "dj60mTD",
+        "confirmPassword": "QIiS6Mj",
+        "streetAddress": "61 Esker Circle",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Electrical and Fire Alarm",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 35,
+        "name": "Nehemiah",
+        "lasrName": "Blanche",
+        "country": "Portugal",
+        "datetime": "3/16/2021",
+        "email": "nblanchey@studiopress.com",
+        "password": "lcAz85S",
+        "confirmPassword": "PQagl5jp",
+        "streetAddress": "14 3rd Terrace",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Ornamental Railings",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 36,
+        "name": "Ashla",
+        "lasrName": "Purver",
+        "country": "Mexico",
+        "datetime": "10/28/2021",
+        "email": "apurverz@google.nl",
+        "password": "XknXXjGCGM",
+        "confirmPassword": "hmFhf4OlcC",
+        "streetAddress": "80408 Trailsway Center",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Hard Tile & Stone",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 37,
+        "name": "Abbie",
+        "lasrName": "Elder",
+        "country": "China",
+        "datetime": "7/21/2021",
+        "email": "aelder10@sina.com.cn",
+        "password": "XdhMdtiq",
+        "confirmPassword": "EprTWTPdw",
+        "streetAddress": "76942 Myrtle Pass",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Electrical",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 38,
+        "name": "Jewelle",
+        "lasrName": "Thorsen",
+        "country": "Kazakhstan",
+        "datetime": "3/11/2021",
+        "email": "jthorsen11@tamu.edu",
+        "password": "i2vzyAXf",
+        "confirmPassword": "LY0jgqI1rTj",
+        "streetAddress": "2670 Sundown Lane",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Rebar & Wire Mesh Install",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 39,
+        "name": "Adela",
+        "lasrName": "Monro",
+        "country": "Indonesia",
+        "datetime": "12/3/2021",
+        "email": "amonro12@biglobe.ne.jp",
+        "password": "phS0B3vDg5",
+        "confirmPassword": "zgO5TLHYt5No",
+        "streetAddress": "5749 Orin Circle",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Overhead Doors",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 40,
+        "name": "Ernestus",
+        "lasrName": "Vasile",
+        "country": "China",
+        "datetime": "6/1/2021",
+        "email": "evasile13@pinterest.com",
+        "password": "vDuRkZPLBj",
+        "confirmPassword": "QbvbR13",
+        "streetAddress": "0 Rieder Drive",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Epoxy Flooring",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 41,
+        "name": "Ellyn",
+        "lasrName": "MacCahee",
+        "country": "Botswana",
+        "datetime": "12/31/2020",
+        "email": "emaccahee14@prweb.com",
+        "password": "yGbnjrdu29",
+        "confirmPassword": "clYjEwY5k",
+        "streetAddress": "641 Monica Junction",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Landscaping & Irrigation",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 42,
+        "name": "Letitia",
+        "lasrName": "Simonazzi",
+        "country": "China",
+        "datetime": "10/2/2021",
+        "email": "lsimonazzi15@washington.edu",
+        "password": "SBjNn7y6e",
+        "confirmPassword": "ZboLG66",
+        "streetAddress": "199 Loftsgordon Lane",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Electrical and Fire Alarm",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 43,
+        "name": "Darice",
+        "lasrName": "Fleming",
+        "country": "Thailand",
+        "datetime": "2/24/2021",
+        "email": "dfleming16@sciencedirect.com",
+        "password": "wDB8OXBBVTDj",
+        "confirmPassword": "83NOlk4OcGU",
+        "streetAddress": "8215 Ryan Terrace",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Drilled Shafts",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 44,
+        "name": "Alie",
+        "lasrName": "McKinnell",
+        "country": "South Africa",
+        "datetime": "7/26/2021",
+        "email": "amckinnell17@oakley.com",
+        "password": "tFgQ1YzN",
+        "confirmPassword": "OIt36ow0d",
+        "streetAddress": "6 Bultman Circle",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Roofing (Asphalt)",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 45,
+        "name": "Wainwright",
+        "lasrName": "O'Shiels",
+        "country": "Portugal",
+        "datetime": "10/13/2021",
+        "email": "woshiels18@fastcompany.com",
+        "password": "Unmu1q",
+        "confirmPassword": "IHdIwK1CcN",
+        "streetAddress": "6 Jana Park",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Drywall & Acoustical (MOB)",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 46,
+        "name": "Richmound",
+        "lasrName": "Mingame",
+        "country": "Russia",
+        "datetime": "12/18/2020",
+        "email": "rmingame19@live.com",
+        "password": "rW8pCX3JE",
+        "confirmPassword": "BTwKmHTR",
+        "streetAddress": "084 Union Terrace",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Masonry",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 47,
+        "name": "Raimondo",
+        "lasrName": "Freed",
+        "country": "Portugal",
+        "datetime": "8/30/2021",
+        "email": "rfreed1a@typepad.com",
+        "password": "Jww8zzqhyOy",
+        "confirmPassword": "MNEY3Wc",
+        "streetAddress": "769 Nelson Crossing",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Exterior Signage",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 48,
+        "name": "Maurine",
+        "lasrName": "Jorry",
+        "country": "Chad",
+        "datetime": "8/25/2021",
+        "email": "mjorry1b@yellowpages.com",
+        "password": "rdTojKXqlh",
+        "confirmPassword": "teKRgdn",
+        "streetAddress": "38774 Stoughton Trail",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Granite Surfaces",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 49,
+        "name": "Jesse",
+        "lasrName": "Alfuso",
+        "country": "Niger",
+        "datetime": "5/31/2021",
+        "email": "jalfuso1c@mail.ru",
+        "password": "Av2XogpYCG",
+        "confirmPassword": "MuHmLK",
+        "streetAddress": "1678 Anzinger Point",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Masonry & Precast",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 50,
+        "name": "Welch",
+        "lasrName": "Volks",
+        "country": "Thailand",
+        "datetime": "2/22/2021",
+        "email": "wvolks1d@icq.com",
+        "password": "5xabZrDK1zk",
+        "confirmPassword": "iaeXrwt",
+        "streetAddress": "0 Toban Trail",
+        "buySell": [
+            "compra",
+            "venta"
+        ],
+        "favoriteCategory": "Rebar & Wire Mesh Install",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 1641831262495,
+        "name": "Prueba",
+        "lastName": "prueba   ",
+        "country": "Argentina",
+        "datetime": "2021-12-28",
+        "email": "prueba@dh.com",
+        "password": "$2a$10$NK4rLfePAdpFVxt9kFnoZOj/Tmjg7RLWpZd/TCJM9KRSZeEBxLcZu",
+        "confirmPassword": "$2a$10$NK4rLfePAdpFVxt9kFnoZOj/Tmjg7RLWpZd/TCJM9KRSZeEBxLcZu",
+        "streetAddress": "calle falsa",
+        "buySell": "comprar",
+        "favoriteCategory": "catgoria2",
+        "avatar": "default.png"
+    },
+    {
+        "userId": 1642019666401,
+        "name": "Marcos",
+        "lastName": "weis",
+        "country": "Argentina",
+        "dateBirth": "2022-01-11",
+        "email": "marcosweis@dh.com",
+        "password": "$2a$10$dtpgxAW92oANy/PSCo3b3OKmsNnvprYwK6p5WlrQOOXgSJiG2rLyG",
+        "confirmPassword": "$2a$10$dtpgxAW92oANy/PSCo3b3OKmsNnvprYwK6p5WlrQOOXgSJiG2rLyG",
+        "streetAddress": "calle falsa",
+        "buySell": "comprar",
+        "favoriteCategory": "catgoria2",
+        "avatar": "default.png"
+    }
+]

@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+}
+
+@media (min-width: 1024px) {
+  .header {
+    /*    background-color: #292c2e; */
+    position: fixed;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: 450ms;
+    animation: reverse;
+    z-index: 1000;
+    top: 0px;
+  }
+
+  .offcanvas-end {
+    width: 40%;
+  }
+
+  .navbar-toggler:hover {
+    border: solid 1px #0bc197;
+  }
+
+  .main {
+    margin-top: 57px;
+  }
+
+  .iconos-header:hover {
+    color: #0bc197;
+  }
+  .logo {
+    position: relative;
+  }
+  .logo-verde {
+    position: absolute;
+    top: 0px;
+    display: none;
+    transition: 450ms;
+    animation: reverse;
+  }
+  .logo:hover .logo-verde {
+    display: block;
+  }
+
+  .bag-menu {
+    position: relative;
+    animation: reverse;
+  }
+  .bag-menu:hover ul {
+    visibility: visible;
+    opacity: 1;
+    transform: translate(0px, 24px);
+  }
+  .hombre-barra {
+    background-color: #0bc197;
+    padding: 1.5px;
+    padding-left: 1.5px;
+    position: absolute;
+    top: 0;
+    padding-left: 46px;
+    animation: reverse;
+    transition: all 460ms;
+    opacity: 0%;
+  }
+  .hombre:hover .hombre-barra {
+    opacity: 100%;
+  }
+  .mujer-barra {
+    background-color: #0bc197;
+    padding: 1.5px;
+    padding-left: 1.5px;
+    position: absolute;
+    top: 0;
+    padding-left: 34px;
+    animation: reverse;
+    transition: all 460ms;
+    opacity: 0%;
+  }
+  .mujer:hover .mujer-barra {
+    opacity: 100%;
+  }
+  .niños-barra {
+    background-color: #0bc197;
+    padding: 1.5px;
+    padding-left: 1.5px;
+    position: absolute;
+    top: 0;
+    padding-left: 34px;
+    animation: reverse;
+    transition: all 460ms;
+    opacity: 0%;
+  }
+  .niños:hover .niños-barra {
+    opacity: 100%;
+  }
+  .recetados-barra {
+    background-color: #0bc197;
+    padding: 1.5px;
+    padding-left: 1.5px;
+    position: absolute;
+    top: 0;
+    padding-left: 60px;
+    animation: reverse;
+    transition: all 460ms;
+    opacity: 0%;
+  }
+  .recetados:hover .recetados-barra {
+    opacity: 100%;
+  }
+  main article.productos {
+    width: 20%;
+  }
+
+  .shadows:hover {
+    box-shadow: 0px 0px 10px rgb(100, 100, 100, 1);
+    transform: scale(105%);
+  }
+  .container-section-logged:hover .name-logged > h6 {
+    color: #0bc197;
+  }
+  .bolsa i:hover {
+    transform: scale(110%);
+    transition: all 300ms;
+    animation: reverse;
+    color: #171a21;
+  }
+  .bagBlue {
+    color: #086788;
+  }
+  .bagRose {
+    color: #ff90b3;
+  }
+
+  .w-100 {
+    width: 100%;
+    height: 500px;
+  }
+  .man {
+    width: 50%;
+    padding: 100px 10px 30px 100px;
+  }
+  .woman {
+    width: 50%;
+    padding: 100px 100px 30px 10px;
+  }
+  .texto-19 {
+    display: flex;
+  }
+}
+/*  ********  PRODUCTS ********  */
+.margin-top {
+  margin-top: 100px;
+}
+/****     SOMBRA PRODUCTOS      *****/
+.container-products-list {
+  box-shadow: none;
+  border-radius: none;
+}

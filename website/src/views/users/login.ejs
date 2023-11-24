@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ("../partials/head") %>
+
+    <body>
+        <header class="j-space-between bgc-header font-color header">
+            <%- include ("../partials/header-home") %>
+        </header>
+        <main class="main-login">
+            <form class="form-login" id="formLogin" action="/user/login" method="POST">
+                <section class="formularies login">
+                    <p class="text-danger">
+                        <%= locals.checkDeleteAccount ? checkDeleteAccount.msg : "" %>
+                    </p>
+                    <h2 class="margin-10" style="text-align: left;">
+                        Ingresa a tu cuenta
+                    </h2>
+
+                    <div>
+                        <div class=" m-formularies-2">
+                            <label></label>
+                            <div>
+                                <input class="form-control  formularies-deco flex-q-1 email-login" type="email"
+                                    name="email" id="email" placeholder="Nombre/Correo Electrónico"
+                                    value="<%= (locals.oldData && oldData.email) ? oldData.email : '' %>">
+                            </div>
+                            <div class="container-errors text-danger">
+                                <p id="errorEmail">
+                                    <%= locals.errors && errors.email ? errors.email.msg : "" %>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="m-formularies-2 ">
+                            <label> </label>
+                            <div>
+                                <input class="form-control  formularies-deco margin-10 flex-q-1" type="password"
+                                    name="password" id="password" placeholder="Contraseña">
+                            </div>
+
+                            <div class="container-errors text-danger">
+                                <p id="errorPassword">
+                                    <%= locals.errors && errors.password ? errors.password.msg : "" %>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="margin-10">
+                        <input type="checkbox" name="rememberuser">
+                        <label style="font-size: 14px; display:inline-block;" for="">Recordar
+                            contraseña</label>
+                    </div>
+                    <div class="margin-10">
+                        <a href="">
+                            <h5 class=" no-access">Recuperar contraseña</h5>
+                        </a>
+
+                    </div>
+                    <div class="text-center m-formularies-2">
+                        <button class=" continuar-deco" type="submit">Ingresa</button>
+                    </div>
+                    </div>
+
+
+                </section>
+                <div>
+                    <img class="modelos" style="width: 700px; height: 100%;" src="/img/modelos.jpg" alt="">
+                </div>
+            </form>
+        </main>
+        <footer class="footer-login">
+            <%- include ("../partials/footer") %>
+        </footer>
+        <%- include('../partials/scripts-boostrap.ejs') %>
+            <script src="/js/user/login.js"></script>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ("../partials/head") %>
+
+    <body>
+        <header>
+            <header class="j-space-between bgc-header font-color header">
+                <%- include ("../partials/header-home") %>
+            </header>
+        </header>
+
+        <body>
+            <main>
+                <section class="container-products margin-top">
+                    <div class="gondola ">
+                        <% for(product of products) { %>
+                            <article class=" margin-10 productos container-products-list">
+                                <a href="/products/<%=product.id%>">
+                                    <div class="precios-descripcion shadows">
+                                        <% if(product.image[0]) { %>
+                                            <img src="<%=`/img/products/${product.image[0].filename}`%>" class=" fotos"
+                                                alt="">
+                                            <% } %>
+                                                <div class="bolsa">
+                                                    <i class=" fas fa-shopping-bag " id="<%=product.id%> "></i>
+                                                </div>
+                                                <div>
+                                                    <% if(product.price[0]){ %>
+                                                        <p class="precios">
+                                                            <%= `$ ${product.price[0].price}` %>
+                                                        </p>
+                                                        <% } %>
+                                                            <h4 class="name">
+                                                                <%= product.name %>
+                                                            </h4>
+                                                </div>
+
+                                    </div>
+                                </a>
+                            </article>
+                            <% } %>
+                    </div>
+                </section>
+            </main>
+            <footer class="">
+                <%- include ("../partials/footer") %>
+            </footer>
+            <%- include('../partials/scripts-boostrap.ejs') %>
+        </body>
+
+
+</html>

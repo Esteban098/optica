@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ("partials/head") %>
+
+    <body>
+        <header class="j-space-between bgc-header font-color header">
+            <%- include ("partials/header-home") %>
+        </header>
+
+
+        <main class="main-carrito">
+
+            <section class="container-carro-de-compras">
+                <div class="top-carrito">
+                    <div class="icons icon-detail-product">
+                        <i class="lni lni-cart"> </i>
+                        <h4>
+                            (<%=productsFav ? productsFav.length : "" %>)
+                        </h4>
+                    </div>
+
+                </div>
+                <div class=" main-carrito-de-copras">
+                    <% if(productsFav ) { %>
+                        <% if(productsFav.length !=0 ) { %>
+                            <% for(element of productsFav) { %>
+                                <article class="article-carrito">
+                                    <div class="left-div-carrito ">
+                                        <img src="<%=`/img/products/${element.product.image[0].filename}`%>" alt="">
+                                    </div>
+                                    <div class="center-div-carrito ">
+                                        <div class="center-div-top">
+                                            <h3>
+                                                <%= element.product.name%>
+                                            </h3>
+                                            <h4>
+                                                Talle: <%= element.product.size.size %>
+                                            </h4>
+                                        </div>
+                                        <div class="center-div-bottom">
+                                            <div>
+                                                <div class="button-add-minus">
+                                                    <button type="button" class="btn btn-dark btn-minus">
+                                                        <i class="lni lni-minus"></i>
+                                                    </button>
+                                                    <input type="number" id="inputCntidadCarrito">
+                                                    <button type="button" class="btn btn-dark btn-add">
+                                                        <i class="lni lni-plus"></i>
+                                                    </button>
+                                                </div>
+                                                <div class="container-ver-similares">
+                                                    <a href="/products">Ver similares</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="rigth-div-carrito ">
+                                        <div class="top-rigth-carrito icons">
+
+                                            <label for="" id="priceCarrito">
+                                                $ <%= element.product.price[0].price %>
+                                            </label>
+                                        </div>
+                                        <div class="bottom-trash-right-carrito icons">
+                                            <form action="<%=`/car/delete/${element.product.id}`%>" method="post">
+                                                <button type="submit">
+                                                    <i class="far fa-trash-alt"></i>
+                                                </button>
+                                            </form>
+                                </article>
+
+                                <% } %>
+                                    <% } else { %>
+                                        <h1 style="color: #0bc197;">Usted no posse actualmente nada en el
+                                            carrito</h1>
+            </section>
+        </main>
+        <footer class="footer_shoppingCar">
+            <%- include('partials/footer.ejs') %>
+        </footer>
+
+        <% } %>
+            <% } else {%>
+                <h1 style="color: #0bc197;">No se pudo borrar el producto
+                </h1>
+                </div>
+
+                </section>
+                </main>
+                <footer class="footer_shoppingCar">
+                    <%- include('partials/footer.ejs') %>
+                </footer>
+                <% } %>
+                    </section>
+                    </main>
+                    <footer class="footer_shoppingCar" style="position: static;">
+                        <%- include('partials/footer.ejs') %>
+                    </footer>
+                    <%- include('./partials/scripts-boostrap.ejs') %>
+    </body>
+
+</html>

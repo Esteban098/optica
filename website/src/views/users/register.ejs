@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ("../partials/head") %>
+
+
+    <body>
+        <header class="j-space-between bgc-header font-color header">
+            <%- include ("../partials/header-home") %>
+        </header>
+
+        <main class="main-register display-flex">
+            <% const invalid="is-invalid" %>
+                <form class="form-register" id="formRegister" action="/user/register" method="post"
+                    enctype="multipart/form-data">
+                    <h2 class="margin-10" style="text-align: center;">
+                        Crea Tu cuenta
+                    </h2>
+                    <section class="formularies">
+                        <div>
+                            <div class="m-formularies">
+                                <label for="name"></label>
+                                <input class="form-control <%= locals.errors && errors.name? 'is-invalid': '' %> "
+                                    name="name" id="name" placeholder="Nombre" <%if(locals.oldData && oldData.name){%>
+                                value="<%=oldData.name%>"
+                                    <% } %>>
+
+                                        <div class=" text-danger">
+                                            <p id="errorsName">
+                                                <%= locals.errors && errors.name ? errors.name.msg : "" %>
+                                            </p>
+                                        </div>
+                            </div>
+
+                            <div class=" m-formularies">
+                                <label for="lastname"></label>
+                                <input class=" formularies-deco flex-q-1 form-control 
+                                <%= locals.errors && errors.lastName ? 'is-invalid' : '' %> " name="lastName"
+                                    id="lastName" placeholder="Apellido" <% if(locals.oldData && oldData.name) { %>
+                                value="<%=oldData.lastName%> "
+                                    <% } %>>
+                                        <div class="text-danger">
+                                            <p id="errorLastName">
+                                                <%= locals.errors && errors.lastName ? errors.lastName.msg : "" %>
+                                            </p>
+                                        </div>
+                            </div>
+
+                            <div class=" text-center">
+                                <img src="/img/line.png" style="width: 15%;" alt="">
+                            </div>
+                            <div class="m-formularies">
+                                <label> Pais/Region</label>
+                                <select class="flex-q-1 form-control formularies-deco 
+                                <%= locals.errors && errors.country ? 'is-invalid' : '' %> " name="country"
+                                    id="country">
+                                    <option value="">Elige un pais</option>
+                                    <%const
+                                        paises=['Argentina','Mexico','Chile','Uruguay','Colombia','Venezuela','Brasil','Bolivia','USA']
+                                        %>
+                                        <% for(const pais of paises) { %>
+                                            <option value="<%=pais %>" <%=locals.oldData && (oldData.country==pais)
+                                                ? "selected" : "" %> >
+                                                <%=pais %>
+                                            </option>
+                                            <% } %>
+                                </select>
+                                <div class="text-danger">
+                                    <p id="errorCountry">
+                                        <%= locals.errors && errors.country ? errors.country.msg : "" %>
+                                    </p>
+                                </div>
+                            </div class="m-formularies">
+
+                            <div class="m-formularies">
+                                <label>Fecha Nacimiento:</label>
+                                <input class=" formularies-deco flex-q-1 form-control
+                                <%= locals.errors && errors.dateBirth ? 'is-invalid' : '' %> " type="date"
+                                    name="dateBirth" id="dateBirth" <%if(locals.oldData && oldData.dateBirth) { %>
+                                value="<%=oldData.dateBirth%>"
+                                    <% } %>>
+                                        <div class="text-danger">
+                                            <p id="errorDateBirth">
+                                                <%=locals.errors && errors.dateBirth ? errors.dateBirth.msg : "" %>
+                                            </p>
+                                        </div>
+                            </div>
+                            <div class=" text-center">
+                                <img src="/img/line.png" style="width: 15%;" alt="">
+                            </div>
+                            <div class="m-formularies">
+                                <label for="Email"></label>
+                                <input class=" formularies-deco flex-q-1 form-control
+                                <%= locals.errors && errors.email ? 'is-invalid' : '' %> " name="email"
+                                    placeholder="Email" id="email" <%if(locals.oldData && oldData.email) { %>
+                                value="<%=oldData.email%>"
+                                    <% } %>>
+
+                                        <div class="text-danger">
+                                            <p id="errorEmail">
+                                                <%= locals.errors && errors.email ? errors.email.msg : "" %>
+                                            </p>
+                                        </div>
+
+
+                            </div>
+                            <div class="m-formularies">
+                                <label for="password"></label>
+                                <input class=" formularies-deco flex-q-1 form-control
+                                <%= locals.errors && errors.password ? 'is-invalid' : '' %> " type="password"
+                                    name="password" id="password" placeholder="Contraseña">
+                                <div class="text-danger">
+                                    <p id="errorPassword">
+                                        <%= locals.errors && errors.password ? errors.password.msg : "" %>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="m-formularies">
+                                <label for="password"></label>
+                                <input class=" formularies-deco flex-q-1 form-control
+                                <%= locals.errors && errors.confirmPassword ? 'is-invalid' : '' %> " type="password"
+                                    name="confirmPassword" id="confirmPassword" placeholder="Confirmar contraseña">
+
+                                <div class="text-danger">
+                                    <p id="errorConfirmPassword">
+                                        <%=locals.errors && errors.confirmPassword ? errors.confirmPassword.msg : "" %>
+                                    </p>
+                                </div>
+
+                            </div>
+                            <div class=" text-center">
+                                <img src="/img/line.png" style="width: 15%;" alt="">
+                            </div>
+                            <div class="m-formularies">
+                                <label for="address"> </label>
+                                <input class=" formularies-deco flex-q-1 form-control
+                                <%= locals.errors && errors.lastName ? 'is-invalid' : '' %> " type=" text"
+                                    name="streetAddress" placeholder="Domicilio" id="address" <%if(locals.oldData &&
+                                    oldData.name) { %>
+                                value="<%=oldData.streetAddress%>"
+                                    <% } %>>
+
+                                        <div class="text-danger">
+                                            <p id="errorAddress">
+                                                <%=locals.errors && errors.streetAddress ? errors.streetAddress.msg :""
+                                                    %>
+                                            </p>
+                                        </div>
+
+
+                            </div>
+                            <div class="m-formularies ">
+                                <label for="avatar">Seleccione una imagen</label>
+                                <input class="form-control 
+                                <%=locals.errors && errors.avatar ? 'is-invalid' : ''%>" type="file" name="avatar"
+                                    id="avatar">
+                                <div class="text-danger">
+                                    <p id="errorAvatar">
+                                        <%= locals.errors && errors.avatar ? errors.avatar.msg : "" %>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <div class="m-formularies container_btns_register">
+                                <button class="continuar-deco" type="submit">Continuar</button>
+                                <button class="borrar-deco" type="reset">Borrar</button>
+                            </div>
+                        </div>
+                    </section>
+
+                </form>
+        </main>
+        <footer class="footer_register">
+            <%- include('../partials/footer.ejs') %>
+        </footer>
+        <%- include('../partials/scripts-boostrap.ejs') %>
+
+            <script src="/js/user/register.js"></script>
+    </body>
+
+</html>

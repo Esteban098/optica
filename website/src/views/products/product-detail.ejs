@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head.ejs') %>
+
+    <body>
+        <header class="j-space-between bgc-header font-color header">
+            <%- include ("../partials/header-home") %>
+        </header>
+        <main class="main_detail_product">
+            <section>
+                <article class="article-detail-product">
+
+                    <section class="top-izquierda">
+                        <div class="container-carrusel">
+                            <div id="carousel-product-details" class="carousel carrusel-product slide"
+                                data-bs-ride="carousel">
+                                <div class="carousel-inner">
+
+                                    <% for(let i=0; i < product.image.length ; i++) { %>
+                                        <% if(i==0) { %>
+                                            <div class="carousel-item active">
+                                                <img src="<%=`/img/products/${product.image[i].filename}`%>"
+                                                    class="d-block w-100 imageSmalCarrusel" alt="image<%=`${i}`%>"
+                                                    id="<%=i%>">
+                                            </div>
+                                            <% } else { %>
+                                                <div class="carousel-item ">
+                                                    <img src="<%=`/img/products/${product.image[i].filename}`%>"
+                                                        class="d-block w-100" alt="image<%=`${i}`%>" id="<%=i%>">
+                                                </div>
+                                                <% } %>
+                                                    <% } %>
+
+
+
+                                </div>
+                                <button class="carousel-control-prev" type="button"
+                                    data-bs-target="#carousel-product-details" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button"
+                                    data-bs-target="#carousel-product-details" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="imgs-del-producto">
+                            <% for(image of product.image) { %>
+                                <img src="<%=`/img/products/${image.filename}`%>" width="20%" alt=""
+                                    id="imagesLowCarrusel">
+                                <% } %>
+                        </div>
+                    </section>
+                    <section class="parte-derecha data">
+                        <div class=" container-title-icon">
+                            <h2>
+                                <%= product.name%>
+                            </h2>
+
+                            <div class="icons">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                        </div>
+                        <h3>
+                            <%= product.shortDescription %>
+                        </h3>
+                        <div>
+                            <div class="container-desciption" style="display:flex">
+
+                                <h4>
+                                    <%=`$ ${product.price[0].price}`%>
+                                </h4>
+
+                            </div>
+                            <label for="">Color</label>
+                            <div class="form-control form-control-color sec-color"
+                                style="background-color:<%=product.color[0] ? product.color[0].name : ''%>">
+                            </div>
+                            <div class="form-floating">
+                                <select class="form-select" id="floatingSelect"
+                                    aria-label="Floating label select example">
+                                    <option>Seleccione tamaño</option>
+                                    <% for(size of sizes) { %>
+                                        <option value="<%=size.id %>" <%=size.id==product.size_id ? 'selected' : "" %> >
+                                            <%= size.size %>
+                                        </option>
+                                        <% } %>
+                                </select>
+                                <label for="floatingSelect">Works with selects</label>
+                            </div>
+
+                            <h4 id="h4_priceDiscount">
+                                <%=`${product.price[0] ?'Descuento' +" "+ product.price[0].discount:""}%`%>
+                            </h4>
+
+
+
+                            <div class=" sec-envio">
+                                    <%=product.envio%>
+                                        <i class="fas fa-truck"></i>
+                        </div>
+                        </div>
+                        <div class=" cont-btn-buy-dp">
+
+                            <a href="/products/<%=product.id%>/prescription">
+                                <button type="submit" class="btn btn-dark"> Seleccionar Prescripción </button>
+                            </a>
+                        </div>
+                        <% if(locals.userLogged && (userLogged.admin==1)) { %>
+                            <div class="btn-edit-delete">
+                                <a href="/products/<%=product.id%>/edit"><button type="button"
+                                        class="btn btn-outline-info">Editar</button></a>
+                                <form action="/products/<%=product.id%>?_method=DELETE" method="POST">
+                                    <button type="submit" class="btn btn-outline-danger">Eliminar</button>
+                                </form>
+                            </div>
+                            <% } %>
+                    </section>
+
+                </article>
+                <section class=" bottom-article">
+                    <nav>
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                            <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                aria-selected="true">Descripción</button>
+                            <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile"
+                                aria-selected="false">Detalle</button>
+                            <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact"
+                                aria-selected="false">Recomendaciones</button>
+                        </div>
+                    </nav>
+                    <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                            aria-labelledby="nav-home-tab">
+                            <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                aria-labelledby="nav-home-tab">
+                                <p class="descripcion-detail-product">
+                                    <%=product.longDescription%>
+                                </p>
+
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                            <div class="details-glasses">
+
+                                <div class="div1-detail-glasses">
+                                    <h4> Tamaño: <%=product.size.size%>
+                                    </h4>
+
+
+
+                                    <h4> Peso: <%= `${product.weigth} g` %>
+                                    </h4>
+
+                                    <h4> Material: <%= product.material.material %>
+                                    </h4>
+                                </div>
+
+                                <div class="div2-detail-glasses">
+                                    <h4> Forma: <%= product.shape%>
+                                    </h4>
+
+                                    <h4>Borde: <%= product.border %>
+                                    </h4>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                            ...</div>
+                    </div>
+                </section>
+            </section>
+
+        </main>
+        <footer class="footer-product-detail">
+            <%- include('../partials/footer.ejs') %>
+        </footer>
+        <%- include('../partials/scripts-boostrap.ejs') %>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+            <script src="/js/products/product-detail.js"></script>
+
+    </body>
+
+</html>

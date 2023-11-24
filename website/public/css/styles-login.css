@@ -1,0 +1,37 @@
+.no-access {
+  color: #2567e6;
+  margin: 10px 0px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.m-formularies-2 {
+  margin: 10px 0px;
+  text-align: center;
+}
+/*****      FOOTER LOGIN     *****/
+
+.formularies {
+  max-width: 700px;
+}
+.form-login {
+  display: flex;
+}
+.email-login {
+  margin-top: 10px;
+  margin-left: 10px;
+}
+.container-errors {
+  display: flex;
+  justify-content: start;
+  margin-left: 10px;
+}
+@media (min-width: 1024px) {
+  /*.main-login {
+    margin-top: 64px;
+  }*/
+  .footer-login {
+    position: absolute;
+    bottom: 0px;
+  }
+}

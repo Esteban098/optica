@@ -1,0 +1,74 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.section_top {
+  width: 100%;
+}
+.main_prescription_form {
+  display: block;
+  width: 100%;
+}
+figure {
+  margin: auto;
+  margin-top: 80px;
+}
+figure img {
+  max-width: 100%;
+}
+.second_ul {
+  padding-left: 0.5rem;
+  width: 100%;
+}
+
+.lis_top {
+  padding: 2px;
+}
+.container_total {
+  padding: 2px;
+  margin-bottom: 15px;
+}
+.form_prescription {
+  width: 100%;
+  margin: auto;
+}
+.second_li {
+  width: 20%;
+}
+.container_btn {
+  width: 100%;
+}
+.footer-prescriptions {
+  position: absolute;
+  bottom: -420px;
+}
+@media (min-width: 480px) {
+  .container_total {
+    max-width: 650px;
+    margin: auto;
+  }
+  .lis_top {
+    width: 20%;
+    margin: auto;
+  }
+  .second_ul {
+    padding-left: 1.5rem !important;
+  }
+  figure {
+    max-width: 600px;
+  }
+}
+@media (min-width: 1024px) {
+  .section_top {
+    display: flex;
+    margin-top: 59px;
+  }
+  .container_btn {
+    padding-left: 1.5rem !important;
+  }
+  .footer-prescriptions {
+    position: absolute;
+    bottom: -120px;
+  }
+}

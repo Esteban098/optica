@@ -1,0 +1,11 @@
+const express = require("express");
+const router = express.Router();
+const productApiRouter = require("./product-api-router");
+const orderApiRouter = require("./order-api-router");
+const homeApiProductRouter = require("./home-api-product-router");
+const userApiRouter = require("./user-api-router");
+router.use("/", homeApiProductRouter);
+router.use("/products", productApiRouter);
+router.use("/orders", orderApiRouter);
+router.use("/users", userApiRouter);
+module.exports = router;

@@ -1,0 +1,87 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.body-prodile {
+  position: relative;
+}
+.container-user {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+.containerImgProfile {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-color: white;
+  margin: auto;
+}
+.containerImgProfile > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+}
+
+.none {
+  display: none;
+}
+.block {
+  display: block;
+}
+.section2 {
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+}
+
+#btnEnviarProfile {
+  width: 80px;
+  margin: auto;
+  margin-top: 15px;
+}
+
+#formProfile {
+  width: 90%;
+  margin: auto;
+}
+#formProfile label {
+  text-align: center;
+  padding: 5px;
+}
+#formProfile input {
+  width: 100%;
+}
+.container-btns {
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  justify-content: space-evenly;
+}
+#btnEdit {
+  margin-top: 5px;
+}
+
+@media (min-width: 480px) {
+  #formProfile input {
+    width: 60%;
+    margin-left: 20%;
+  }
+}
+@media (min-width: 1024px) {
+  .container-user {
+    margin-top: 60px;
+  }
+  #formProfile input {
+    width: 40%;
+    margin-left: 30%;
+  }
+  .container-btns {
+    display: flex;
+    padding-top: 10px;
+    width: 60%;
+    margin: auto;
+    justify-content: space-evenly;
+  }
+}

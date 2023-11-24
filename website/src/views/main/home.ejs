@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ("../partials/head") %>
+
+
+    <body>
+        <header class="j-space-between bgc-header font-color header">
+            <%- include ("../partials/header-home") %>
+        </header>
+        <main class="main">
+            <section>
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                            aria-label="Slide 4"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="/img/banner1.jpg" height="350px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="/img/banner4.jpg" height="350px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="/img/banner5.png" height="350px" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item ">
+                            <img src="/img/banner3.jpg" height="350px" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </section>
+            <div class="bg-skyblue pad-10">
+                <h2 class="display-flex" style="justify-content: space-around; align-items: center;">
+                    <p class="text-center font-14 font-ligth">
+                        <a class="text-decoration-2" href="">ENVIOS GRATIS </a>
+                    </p>
+                    <i style="color: white;" class="fas fa-grip-lines-vertical margin-10"></i>
+                    <p class="text-center font-14 font-ligth">
+                        <a class="text-decoration-2" href="">DEVOLUCIONES GRATIS </i></a>
+                    </p>
+                    <i style="color: white;" class="fas fa-grip-lines-vertical margin-10"></i>
+                    <p class="text-center font-14 font-ligth">
+                        <a class="text-decoration-2 " href="">GARANTIA 30 DIAS</a>
+                    </p>
+                </h2>
+            </div>
+            <%# End TopBar %>
+                <div class="diplay-flex pad-50 ">
+                    <h2 style="justify-content: center; align-items: center;">
+                        <p style="text-align: center;">
+                            ELEGI TU ESTILO
+                        </p>
+                        <p class="text-decoration-3 margin-10" style="text-align: center;">
+                            100% High Quality / Híper livianos / Súper confortables
+                        </p>
+                    </h2>
+                </div>
+                <section class="man-women">
+                    <div class="man">
+                        <a href="/men">
+                            <img class="genero" src="/img/man.png" alt="">
+                        </a>
+                    </div>
+                    <div class="woman">
+                        <a href="/women">
+                            <img class="genero" src="/img/women.jpg" alt="">
+                        </a>
+                    </div>
+                </section>
+                <section class="products">
+                </section>
+                <section class="container-products">
+                </section>
+                <div class="boder-1px margin-10">
+                    <h4 class="text-center margin-10">
+                        ¿Tiene preguntas sobre gafas?
+                    </h4>
+                    <p class="text-center">
+                        Tenemos respuestas. Aprenda a encontrar estilos para la forma de su rostro, comprenda su
+                        prescripción e
+                        incluso mida la distancia pupilar.
+                    </p>
+                    <div class="j-center margin-20 display-flex">
+                        <div class="icono-receta margin-10">
+                            <div class="text-center">
+                                <img style="width: 30px;" src="/img/how-to-read.svg" alt="">
+                            </div>
+                            <div class="text-center">
+                                <a class="text-center text-sinformato " href="/how-to-read">¿Como leer una receta?
+                                </a>
+                            </div>
+                        </div>
+                        <div class="icono-receta margin-10">
+                            <div class="text-center">
+                                <img style="width: 30px;" src="/img/pupillary.svg" alt="">
+                            </div>
+                            <div class="text-center">
+                                <a class="text-center text-sinformato " href="">Distancia pupilar
+                                </a>
+                            </div>
+                        </div>
+                        <div class="icono-receta margin-10">
+                            <div class="text-center">
+                                <img style="width: 30px;" src="/img/face-shape.svg" alt="">
+                            </div>
+                            <div class="text-center">
+                                <a class="text-center text-sinformato " href="">Marcos y formas faciales
+                                </a>
+                            </div>
+                        </div>
+                        </p>
+                    </div>
+                </div>
+                <section class="j-space-around pad-20 lentes-blueligth">
+                    <div class="lentes-bltxt">
+                        <h3 class="margin-10">
+                            LENTES DE BLOQUEO LUZ AZUL
+                        </h3>
+                        <P class="margin-10">
+                            Las lentes de bloqueo azul filtran la luz azul emitida por la pantalla digital,
+                            como su teléfono o computadora portátil.
+                        </P>
+                        <button class="margin-10 boton-explorar">
+                            <a class="text-sinformato-3" href="/products">EXPLORAR LENTES</a>
+                        </button>
+                    </div>
+                    <div class="margin-10">
+                        <img class="glass" src="/img/glass.jpg" alt="">
+                    </div>
+
+                </section>
+        </main>
+
+        <footer>
+            <%- include ("../partials/footer") %>
+        </footer>
+        <%- include('../partials/scripts-boostrap.ejs') %>
+            <script src="../../../js/products/home.js"></script>
+
+    </body>
+
+</html>

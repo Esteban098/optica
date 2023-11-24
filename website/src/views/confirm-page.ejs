@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ("partials/head") %>
+
+    <body>
+        <header class="j-space-between bgc-header font-color header">
+            <%- include ("partials/header-home") %>
+        </header>
+            <main class="main-login">
+                <form class="form-login" action="" method="POST">
+                    <section class="formularies login">
+            
+                        <h2 class="margin-10" style="text-align: left;">
+                            Datos de la tarjeta
+                        </h2>
+                        <div>
+                            <div class=" m-formularies-2">
+                                <label></label>
+                                <div>
+                                    <input class="numero-tarjeta" type="string" name="numero-tarjeta"
+                                        placeholder="0000 0000 0000 0000"
+                                        value="">
+                                </div>
+                                
+                            </div>
+                            <label></label>
+                            <div>
+                                <div class=" m-formularies-3">
+                                <input class="numero-tarjeta" type="date" name="numero-tarjeta" placeholder="fecha de expiracion" value="">
+                            </div>
+
+                                </div>
+                                <div class="m-formularies-3 ">
+                                    <label> </label>
+                                    <div>
+                                        <input class="nombre" type="string" name="nombre" 
+                                        placeholder="Nombre">
+                                    </div>
+
+                                    <div class="m-formularies-4 ">
+                                        <label> </label>
+                                        <div>
+                                            <input class="codigo" type="string" name="codigo" 
+                                            placeholder="Codigo">
+                                        </div>
+
+
+                               
+                            </div>
+                        </div>
+                        
+        
+                        </div>
+                        <div class="text-center m-formularies-2">
+                            <button class=" continuar-deco" type="submit">Comprar</button>
+                        </div>
+                        </div>
+            
+            
+                    </section>
+                    
+                </form>
+            </main>
+
+
+             <%- include('partials/footer.ejs') %>
+                
+   </body>
+            
+</html>

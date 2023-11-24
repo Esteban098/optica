@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include ("partials/head") %>
+
+    <body class="body-prescripcion">
+        <header class="j-space-between bgc-header font-color header">
+            <%- include ("partials/header-home") %>
+        </header>
+            <main class="main-prescripcion">
+                <form class="form-login" action="/tarjeta" method="POST" enctype="multipart/form-data">
+                    <section class="formularies login">
+            
+                        <h1 class="margin-50" style="text-align: left;">
+                            Prescripcion
+                        </h1>
+                        <div class ="distance">
+                            <h3 class="Distancia">Distancia</h3>
+                            <div class="eyes">
+                                <label></label>
+                                <div class = "eye">
+                                    <li class="lente">Lente derecho</li>
+                                   
+                                    <div class="objetos">
+                                    <div class="esfera">Esfera</div>
+                                    <select name="sphere-right" id="">
+                                        <option value=""></option>
+                                            <% let graduacion=[-12.75, -12.51, -12.25, -12.01, -11.75 , -11.51, -11.25, -11.01, -10.75, -10.51, -10.25, -10.01,
+                                            -9.75, -9.51, -9.25, -9.01, -8.75, -8.51, -8.25, -8.01, -7.75, -7.51, -7.25, -7.01, -6.75, -6.51, -6.25, -6.01,
+                                            -5.75, -5.51, -5.25, -5.01, -4.75, -4.51, -4.25, -4.01, -3.75, -3.51, -3.25, -3.01, -2.75, -2.51, -2.25, -2.01,
+                                            -1.75, -1.51, -1.25, -1.01, -0.75, -0.51, -0.25, 0, 0.25, 0.51, 0.75, 1.01, 1.25, 1.51, 1.75, 2.01, 2.25, 2.51,
+                                            2.75, 3.01, 3.25, 3.51, 3.75, 4.01, 4.25, 4.51, 4.75, 5.01, 5.25, 5.51, 5.75, 6.01, 6.25, 6.51, 6.75, 7.01, 7.25,
+                                            7.51, 7.75, 8.01, 8.25, 8.51, 8.75, 9.01, 9.25, 9.51, 9.75, 10.01, 10.25, 10.51, 10.75, 11.01, 11.25, 11.51, 11.75,
+                                            12.01, 12.25, 12.51, 12.75] %>                                       
+                                            <% for (const unaGraduacion of graduacion) { %>
+                                            <option ><%= unaGraduacion %> </option>
+                                         <% } %>
+                                    </select>
+                                    </div>
+
+                                    <div class="cilindro">Cilindro</div>
+                                    <select name="cylinder-right" id="">
+                                        <option value=""></option>
+                                        <% for (const unaGraduacion of graduacion) { %>
+                                            <option>
+                                                <%= unaGraduacion %>
+                                            </option>
+                                            <% } %>
+                                
+                                    </select>
+                                    </div>
+
+                                </div>
+                                <div class="eye">
+                                    <li class="lente">Lente izquiero</li>
+                                
+                                    <div class="objetos">
+                                    <div class="esfera">Esfera</div>
+                                    <select name="sphere-right" id="">
+                                        <option value=""></option>
+                                        <% for (const unaGraduacion of graduacion) { %>
+                                            <option>
+                                                <%= unaGraduacion %>
+                                            </option>
+                                            <% } %>
+                                    </select>
+                                    </div>
+                                
+                                    <div class="cilindro">Cilindro</div>
+                                    <select name="cylinder-right" id="">
+                                        <option value=""></option>
+                                        <% for (const unaGraduacion of graduacion) { %>
+                                            <option>
+                                                <%= unaGraduacion %>
+                                            </option>
+                                            <% } %>
+                                    </select>
+                                
+                                </div>
+                            </div>
+                                <p>-----------------------------------</p>
+                                <div class="multifocales">
+                                    <h3 class="Distancia">Multifocales</h3>
+                                    <div class="eyes">
+                                        <label></label>
+                                        <div class="eye">
+                                            <li class="lente">Lente derecho</li>
+                                
+                                            <div class="objetos">
+                                            <div class="esfera">Esfera</div>
+                                            <select name="sphere-right" id="">
+                                                <option value=""></option>
+                                                <% for (const unaGraduacion of graduacion) { %>
+                                                    <option>
+                                                        <%= unaGraduacion %>
+                                                    </option>
+                                                    <% } %>
+                                            </select>
+                                            </div>
+                                
+                                            <div class="cilindro">Cilindro</div>
+                                            <select name="cylinder-right" id="">
+                                                <option value=""></option>
+                                                <% for (const unaGraduacion of graduacion) { %>
+                                                    <option>
+                                                        <%= unaGraduacion %>
+                                                    </option>
+                                                    <% } %>
+                                            </select>
+                                
+                                        </div>
+                                        <div class="eye">
+                                            <li class="lente">Lente izquiero</li>
+                                
+                                            <div class="objetos">
+                                            <div class="esfera">Esfera</div>
+                                            <select name="sphere-right" id="">
+                                                <option value=""></option>
+                                                <% for (const unaGraduacion of graduacion) { %>
+                                                    <option>
+                                                        <%= unaGraduacion %>
+                                                    </option>
+                                                    <% } %>
+                                            </select>
+                                        
+                                            <div class="cilindro">Cilindro</div>
+                                            <select name="cylinder-right" id="">
+                                                <option value=""></option>
+                                                <% for (const unaGraduacion of graduacion) { %>
+                                                    <option>
+                                                        <%= unaGraduacion %>
+                                                    </option>
+                                                    <% } %>
+                                            </select>
+                                            </div>
+                                            
+                                
+                                        </div>
+                                    </div>
+                            
+                                <p>-----------------------------------</p>
+                                    <div class="lectura">
+                                        <h3 class="Distancia">Lectura</h3>
+                                        <div class="eyes">
+                                            <label></label>
+                                                <div class="eye">
+                                                    <li class="lente">Lente derecho</li>
+                                                
+                                                    <div class="objetos">
+                                                        <div class="esfera">Esfera</div>
+                                                        <select name="sphere-right" id="">
+                                                            <option value=""></option>
+                                                            <% for (const unaGraduacion of graduacion) { %>
+                                                                <option>
+                                                                    <%= unaGraduacion %>
+                                                                </option>
+                                                                <% } %>
+                                                        </select>
+                                                    </div>
+                                                
+                                                    <div class="cilindro">Cilindro</div>
+                                                    <select name="cylinder-right" id="">
+                                                        <option value=""></option>
+                                                        <% for (const unaGraduacion of graduacion) { %>
+                                                            <option>
+                                                                <%= unaGraduacion %>
+                                                            </option>
+                                                            <% } %>
+                                                    </select>
+                                                
+                                                </div>
+                                                <div class="eye">
+                                                    <li class="lente">Lente izquiero</li>
+                                                
+                                                    <div class="objetos">
+                                                        <div class="esfera">Esfera</div>
+                                                        <select name="sphere-right" id="">
+                                                            <option value=""></option>
+                                                            <% for (const unaGraduacion of graduacion) { %>
+                                                                <option>
+                                                                    <%= unaGraduacion %>
+                                                                </option>
+                                                                <% } %>
+                                                        </select>
+                                                
+                                                        <div class="cilindro">Cilindro</div>
+                                                        <select name="cylinder-right" id="">
+                                                            <option value=""></option>
+                                                            <% for (const unaGraduacion of graduacion) { %>
+                                                                <option>
+                                                                    <%= unaGraduacion %>
+                                                                </option>
+                                                                <% } %>
+                                                        </select>
+                                                    </div>
+                                            
+                                                </div>
+                                                </div>
+                                     <p>-----------------------------------</p>
+                                        <p class="boton-front">
+                                          <button class="continuar-deco" type="submit">Enviar sin receta</button>
+                                        </p>
+                    </section>
+                    
+                </form>
+            </main>
+
+
+             <%- include('partials/footer.ejs') %>
+             <script src = "../../../public/js/user/prescription.js"></script>
+                
+   </body>
+            
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('../partials/head.ejs') %>
+
+    <body>
+        <header class="j-space-between bgc-header font-color header">
+            <%- include ("../partials/header-home") %>
+        </header>
+        <main class="main_prescription_form" style="display: block;">
+            <section class="section_top w-100">
+                <div class="div_container_img">
+
+                    <figure class="p-2">
+                        <img src="<%=product && product.image[0] ? `/img/products/${product.image[0].filename}` : "" %>"
+                            alt="">
+                    </figure>
+                </div>
+                <div class=" container_total " id=" container">
+                    <form class="form_prescription" action="<%`/products/${product.id}/prescription`%>" method="post"
+                        id="fromBuyProductPrescription">
+                        <div class="" id="container_top">
+                            <ul class="static_center d-flex  p-2">
+                                <li class="lis_top list-unstyled w-20">
+                                    <div></div>
+                                    <div class="div_right_eye mb-3"> OD
+                                        <span>(Right eye)</span>
+                                    </div>
+                                    <div class=" div_left_eye">OS
+                                        <span>(Left eye)</span>
+                                    </div>
+                                </li>
+                                <li class="lis_top list-unstyled  ">
+                                    <div class="p-1">
+                                        <span> Sphere(SPH)</span>
+                                    </div>
+                                    <div>
+                                        <select class="form-select mb-3 select_eye" name="sphereRightEye" id="od_sph">
+                                            <% for(sphere of dbSphere){ %>
+                                                <option value="<%=sphere.id%>" <%=sphere.id==52 ? 'selected' : "" %> >
+                                                    <%= sphere.sphere %>
+                                                </option>
+                                                <% } %>
+                                        </select>
+                                    </div>
+                                    <div>
+                                        <select class="form-select select_eye " name="sphereLeftEye" id="os_sph">
+                                            <% for(sphere of dbSphere){ %>
+                                                <option value="<%=sphere.id%>" <%=sphere.id==52 ? 'selected' : "" %> >
+                                                    <%= sphere.sphere %>
+                                                </option>
+                                                <% } %>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="lis_top list-unstyled ">
+                                    <div class="p-1">
+                                        <span>Cylinder(CYL)</span>
+                                    </div>
+                                    <div>
+                                        <select class=" form-select mb-3 select_eye" name="cylinderRightEye"
+                                            id="od_cyl">
+                                            <% for(cylinder of dbCylinder){ %>
+                                                <option value="<%=cylinder.id%>" <%=cylinder.id==52 ? 'selected' : "" %>
+                                                    >
+                                                    <%= cylinder.cylinder %>
+                                                </option>
+                                                <% } %>
+                                        </select>
+                                    </div>
+                                    <div class="">
+                                        <select class="form-select select_eye" name="cylinderLeftEye" id="os_cyl">
+                                            <% for(cylinder of dbCylinder){ %>
+                                                <option value="<%=cylinder.id%>" <%=cylinder.id==52 ? 'selected' : "" %>
+                                                    >
+                                                    <%= cylinder.cylinder %>
+                                                </option>
+                                                <% } %>
+                                        </select>
+                                    </div>
+                                </li>
+                                <li class="lis_top list-unstyled w-20">
+                                    <div class="p-1">
+                                        <span> Axis</span>
+                                    </div>
+                                    <div>
+                                        <input class="mb-3 form-control" type="number" id="od_axis" name="AxisRightEye">
+                                    </div>
+                                    <div>
+                                        <input class="mb-3 form-control" type="number" id="os_axis" name="AxisLeftEye">
+                                    </div>
+                                </li>
+
+                                <div></div>
+                            </ul>
+                        </div>
+                        <div class="static_center pb-3 ">
+                            <ul class="second_ul d-flex  ">
+                                <li class="list-unstyled ">
+                                    <div class="pt-1">
+                                        PD
+                                        <span> (Pupillary Distance)</span>
+                                    </div>
+                                </li>
+                                <li class=" second_li list-unstyled mx-3">
+                                    <div>
+                                        <select class="form-select select_PD" name="pupillaryDistance" id="pd">
+                                            <% for(pupillaryDistance of dbPupillaryDistance){ %>
+                                                <option value="<%=pupillaryDistance.id%>" <%=pupillaryDistance.id==52
+                                                    ? 'selected' : "" %>
+                                                    >
+                                                    <%= pupillaryDistance.pupillaryDistance %>
+                                                </option>
+                                                <% } %>
+                                        </select>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="container_btn ps-2">
+                            <button type="submit" class="btn btn-success" id="btnBuyPrescription">Comprar</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer-prescriptions">
+            <%- include('../partials/footer.ejs') %>
+        </footer>
+        <%- include('../partials/scripts-boostrap.ejs') %>
+            <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"> </script>
+            <script src="/js/products/buyProductWithPrescription.js"></script>
+    </body>

@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+/***** BTN COMPRAR *****/
+
+.top-article {
+  width: 100%;
+}
+.top-izquierda {
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+}
+.carrusel-product {
+  width: auto;
+}
+.parte-izquierda {
+  width: 90%;
+}
+.container-carrusel {
+  width: 100%;
+}
+.parte-derecha {
+  max-width: 90%;
+  margin: auto;
+}
+.imgs-del-producto {
+  width: 100%;
+  height: 90px;
+  display: flex;
+  margin: auto;
+  margin-top: auto;
+  text-align: center;
+  border-top: #086788 solid 2px;
+  border-bottom: #086788 2px solid;
+  padding: 5px 0px;
+  justify-content: space-between;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+.imgs-del-producto img {
+  width: 24%;
+}
+.container-title-icon {
+  display: flex;
+  justify-content: start;
+  margin-top: 15px;
+}
+.icons a i {
+  color: #086788;
+}
+.container-title-icon .icons {
+  margin-left: 15px;
+  padding-top: 15px;
+}
+.bottom-article {
+  width: 100%;
+  margin: auto;
+}
+
+.bottom-article ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+.bottom-article ul a li,
+.bottom-article ul a li {
+  list-style: none;
+}
+.bottom-article ul a,
+.bottom-article ul a {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-tabs .nav-link.active {
+  color: #086788;
+}
+.cont-btn-buy-dp button {
+  width: 100%;
+}
+.nav-tabs button {
+  color: #086788;
+  font-weight: bolder;
+  font-size: 14px;
+}
+/****** PRATE DE ABAJO DESCRIPCION DE PRODUCTO ******/
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+  background-color: #212529;
+  color: white;
+  border: solid 1px #212529;
+}
+
+.nav-tabs {
+  width: 98%;
+  margin: auto;
+  margin-top: 20px;
+}
+.descripcion-detail-product {
+  background-color: #212529;
+  color: white;
+  width: 98%;
+  margin: auto;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 10px;
+}
+.details-glasses {
+  display: flex;
+  background-color: #212529;
+  color: white;
+  width: 98%;
+  margin: auto;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+}
+.div2-detail-glasses {
+  margin: inherit;
+}
+
+/***** CARRUSEL PRODUCT DETAIL *****/
+.carousel-item img {
+  height: auto;
+}
+.carousel-inner {
+  border-radius: 8px;
+}
+
+/***** BTN SELECCIONAR LENTES *****/
+.cont-btn-buy-dp {
+  max-width: 300px;
+  margin: auto;
+}
+.btn-dark {
+  margin-top: 20px;
+}
+/***** BTN EDITAR *****/
+.btn-outline-info {
+  width: 82.0667px;
+}
+/***** BTN EDIT AND DELETE *****/
+.btn-edit-delete {
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  margin: auto;
+  margin-top: 10px;
+}
+.btn-outline-info {
+  border: solid 1px #009ffd;
+  color: #009ffd;
+}
+.btn-outline-info:hover {
+  background-color: #009ffd;
+}
+#h4_priceDiscount {
+  text-align: inherit;
+}
+/***** CUADRADO SELECT COLOR *****/
+.sec-color {
+  width: 3rem;
+  height: auto;
+  padding: 0.8rem;
+}
+/***** SELECTED SIZE *****/
+.form-select {
+  max-width: 250px;
+  margin-bottom: 10px;
+}
+/***** SECCION ENVIO + ICON *****/
+.sec-envio {
+  display: flex;
+}
+.sec-envio i {
+  margin-left: 10px;
+  margin-top: 5px;
+}
+#labelImage {
+  max-width: 750px;
+  margin: auto;
+  padding: 20px;
+}
+#inputImagesCreateProduct {
+  width: 100%;
+
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+@media (min-width: 480px) {
+  .article-detail-product {
+    max-width: 90%;
+    margin: auto;
+  }
+  .top-izquierda {
+    max-width: 750px;
+  }
+  .parte-derecha {
+    max-width: 750px;
+    padding: 20px;
+  }
+
+  .container-title-icon {
+    justify-content: start;
+    margin-bottom: 10px;
+  }
+  .container-title-icon .icons {
+    margin-left: 25px;
+  }
+  .nav-tabs button {
+    font-size: 18px;
+  }
+
+  .cont-btn-buy-dp {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer-product-detail {
+    margin-top: 60px;
+  }
+
+  .cont-btn-buy-dp {
+    width: 100%;
+  }
+  .main_detail_product {
+    margin-top: 75px;
+  }
+  .btn-edit-delete {
+    width: 100%;
+  }
+  .top-izquierda {
+    width: 60%;
+  }
+  .parte-derecha {
+    padding: 0px;
+  }
+  .data {
+    width: 25%;
+  }
+  .article-detail-product {
+    display: flex;
+    padding: 10px;
+    margin-top: 80px;
+    margin: auto;
+    max-width: 80%;
+  }
+  .bottom-article ul {
+    justify-content: space-around;
+  }
+  #formValidation {
+    margin-top: 80px;
+  }
+}
+/****     FOOTER PRODUCTOS      *****/
